@@ -1,0 +1,16 @@
+name: Use Helm Chart Packaging Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  call-helm-packaging:
+    uses: NethermindEth/github-workflows/.github/workflows/publish-docker.yaml@add/workflow/chart-packaging
+    with:
+      chart_path: "./promtail/"
+
