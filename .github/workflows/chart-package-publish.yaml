@@ -10,7 +10,7 @@ on:
 
 jobs:
   call-helm-packaging:
-    uses: NethermindEth/github-workflows/.github/workflows/publish-docker.yaml@add/workflow/chart-packaging
+    uses: NethermindEth/github-workflows/.github/workflows/package-helm-chart.yaml@add/workflow/chart-packaging
     with:
-      chart_path: "./promtail/"
+      chart_path: ".promtail/"
 
